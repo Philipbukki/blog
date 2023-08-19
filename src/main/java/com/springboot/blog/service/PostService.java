@@ -9,7 +9,7 @@ import java.util.Optional;
 
 public interface PostService {
     public PostDto save(PostDto postDto);
-    public PostResponse findAll(int pageSize, int pageNo);
+    public PostResponse findAll(int pageSize, int pageNo, String sortBy, String sortDir);
     public PostDto updatePost(PostDto postDto, int postId);
     public PostDto getPost(int postId);
     public String deletePost(int postId);
